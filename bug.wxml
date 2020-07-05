@@ -1,0 +1,5 @@
+<van-collapse  value="{{ timeActiveNums}}" bind:change="onTimeCollapseChange">
+  <van-collapse-item is-link="false" wx:for="{{weeks}}" title="{{item.day}}" wx:key="index" name="{{index}}" >
+    <van-switch slot="right-icon" size="35rpx" checked="{{ item.check }}" data-index="{{index}}" bind:change="onWeekChange" />
+		test
+</van-collapse-item></van-collapse>
